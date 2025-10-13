@@ -19,11 +19,13 @@ from django.urls import path
 from .views import homePageView
 from .views import numbers_show
 from .views import student_show
-
+from .views import welcome
 urlpatterns = [
     path('', homePageView, name ='home'),#new load-> http://127.0.0.1:8000/
     path('list/',numbers_show,name='numbers_show'),
-    path('studentlist/',student_show, name='student_show')
+    path('studentlist/',student_show, name='student_show'),
+    path('welcome',welcome, name='welcome')
+    
     
    
 ]

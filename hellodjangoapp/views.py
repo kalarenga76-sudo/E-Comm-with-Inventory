@@ -2,7 +2,13 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
+from django.utils import timezone
 from .models import Student # add this import
+
+
+def welcome(request):
+    today = timezone.localtime().strftime("%B %d, %Y")
+    return HttpResponse(f"Hello Django welcomes you — {today}")
 
 def homePageView(request):
     return HttpResponse("Hello, Django!")
