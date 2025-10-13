@@ -1,0 +1,49 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+*.egg
+*.log
+*.sqlite3
+dist/
+build/
+pip-wheel-metadata/
+
+# --- Django ---
+db.sqlite3
+/static/
+/staticfiles/
+/media/
+*.pot
+*.mo
+
+# Environment & secrets
+.env
+.env.*
+*.env
+
+# --- Virtual environments (if these folders are inside project root) ---
+.venv/
+venv/
+env/
+hello-env/
+hello_env/
+
+# --- Test/coverage ---
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+
+# --- IDE/Editor ---
+.vscode/
+.idea/
+*.code-workspace
+
+# --- OS files ---
+.DS_Store
+Thumbs.db
+desktop.ini

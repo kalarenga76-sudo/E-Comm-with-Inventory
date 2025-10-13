@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CRUD Operations</title>
+<meta charset="utf-8">
+<link rel="stylesheet"
+href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<table class="table table-striped">
+<thead>
+<tr>
+<th>Student ID</th>
+<th>Roll No</th>
+<th>Student Name</th>
+<th>Class</th>
+<th>Department</th>
+    </tr>
+</thead>
+<tbody>
+{% for stud in student %}
+<tr>
+<td>{{stud.id}}</td>
+<td>{{stud.roll_no}}</td>
+<td>{{stud.name}}</td>
+<td>{{stud.stud_class}}</td>
+<td>{{stud.department}}</td>
+    </tr>
+{% endfor %}
+</tbody>
+</table>
+</div>
+</body>
+</html>
